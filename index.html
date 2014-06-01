@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <link href="https://s3.amazonaws.com/codiqa-cdn/codiqa.ext.css" rel="stylesheet">
+  <link href="https://s3.amazonaws.com/codiqa-cdn/mobile/1.4.2/jquery.mobile-1.4.2.css" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="https://s3.amazonaws.com/codiqa-cdn/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+  <script src="https://s3.amazonaws.com/codiqa-cdn/codiqa.ext.js"></script>
+
+  <script src="script.js"></script>
+
+</head>
+<body>
+<div data-role="page" data-control-title="CLICK" id="page4">
+    <div role="main" class="ui-content" style="padding: 0px">
+        <a href="#page1" data-controltype="image">
+            <div style="">
+                <img style="width: 360px; height: 560px" src="file:///C:/xampp/htdocs/Codiqa%20BAsquet%20Table/Imagenes/3desktop.jpg">
+            </div>
+        </a>
+    </div>
+</div>
+<div data-role="page" data-control-title="INICIO" id="page1">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            INICIO
+        </h1>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="htmlblock">
+            <title>
+                Aerial by HTML5 UP
+            </title>
+            <meta http-equiv="content-type" content="text/html; charset=utf-8">
+            <meta name="description" content="">
+            <meta name="keywords" content="">
+            <!--[if lte IE 8]>
+                <script src="css/ie/html5shiv.js">
+                </script>
+            <![endif]-->
+            <script src="js/skel.min.js">
+            </script>
+            <script src="js/init.js">
+            </script>
+            <noscript>
+                <link rel="stylesheet" href="css/skel.css">
+                <link rel="stylesheet" href="css/style.css">
+                <link rel="stylesheet" href="css/style-wide.css">
+                <link rel="stylesheet" href="css/style-noscript.css">
+            </noscript>
+            <!--[if lte IE 9]>
+                <link rel="stylesheet" href="css/ie/v9.css" />
+            <![endif]-->
+            <!--[if lte IE 8]>
+                <link rel="stylesheet" href="css/ie/v8.css" />
+            <![endif]-->
+            <div id="wrapper">
+                <div id="bg">
+                </div>
+                <div id="overlay">
+                </div>
+                <div id="main">
+                    <!-- Header -->
+                    <header id="header">
+                        <h1>
+                            Basquet Table
+                        </h1>
+                        <p>
+                            El &nbsp;•&nbsp; Tiempo En &nbsp;•&nbsp; Tus Manos
+                        </p>
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="#" class="fa fa-facebook">
+                                        <span>
+                                            Facebook
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="fa fa-dribbble">
+                                        <span>
+                                            Dribbble
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="fa fa-github">
+                                        <span>
+                                            Github
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="fa fa-envelope-o">
+                                        <span>
+                                            Email
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </header>
+                    <!-- Footer -->
+                    <footer id="footer">
+                        <span class="copyright">
+                            © Todos Los Derechos Reservados:
+                            <a href="tepe_92_moy@hotmail.com">
+                                HTML5
+                            </a>
+                            .
+                        </span>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="tabbar" data-iconpos="left" data-theme="a">
+        <ul>
+            <li>
+                <a href="#" data-transition="pop" data-theme="" data-icon="home">
+                    INICIO
+                </a>
+            </li>
+            <li>
+                <a href="#page2" data-transition="fade" data-theme="" data-icon="gear">
+                    TIEMPO
+                </a>
+            </li>
+            <li>
+                <a href="#page3" data-transition="fade" data-theme="" data-icon="edit">
+                    CONFIG
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div data-role="page" data-control-title="TIEMPO" id="page2">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            TIEMPO
+        </h1>
+        <a data-rel="back" href="#page1" data-icon="back" data-iconpos="left"
+        class="ui-btn ui-btn-left ui-icon-back ui-btn-icon-left">
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="htmlblock">
+            <title>
+                Cronómetro
+            </title>
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <script type="text/javascript" src="JavaScriptReloj.js">
+            </script>
+            <link href="StyleReloj.css" rel="stylesheet" type="text/css">
+            <div id="cronometro">
+                <div id="reloj">
+                    00 : 00
+                </div>
+                <form name="cron" action="#">
+                    <input type="button" value="Empezar" name="empieza">
+                    <input type="button" value="Parar" name="para">
+                    <br>
+                    <input type="button" value="Continuar" name="continua">
+                    <input type="button" value="Reiniciar" name="reinicia">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div data-role="page" data-control-title="CONFIG" id="page3">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            CONFIG
+        </h1>
+        <a data-rel="back" href="#page1" data-icon="back" data-iconpos="left"
+        class="ui-btn ui-btn-left ui-icon-back ui-btn-icon-left">
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+    </div>
+</div>
+</body>
+</html>
