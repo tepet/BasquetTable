@@ -11,7 +11,7 @@ document.cron.reinicia.onclick = reiniciar;
 var marcha=0; //control del temporizador
 var cro=0; //estado inicial del cronómetro.
 //cronometro en marcha. Empezar en 0:
-var minutitos = 1;
+var minutitos = 2;
 var segunditos = 00;
 function empezar() {
          if (marcha==0) { //solo si el cronómetro esta parado
