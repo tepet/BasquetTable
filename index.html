@@ -18,6 +18,9 @@
 
   <script src="script.js"></script>
 
+
+  <script type="text/javascript" src="JSBoton2.js"></script>
+
 </head>
 <body>
 <div data-role="page" data-control-title="INICIO" id="page1">
@@ -137,6 +140,72 @@
         class="ui-btn ui-btn-left ui-icon-back ui-btn-icon-left">
         </a>
     </div>
+
+
+
+
+
+<head> 
+<title>Contador</title> 
+</head> 
+<script language="JavaScript"> 
+var contador=0; 
+function incrementar() { 
+if(contador==400) 
+alert('Maximo permitido alcanzado: 400'); 
+else { 
+document.contar.contadorcito.value= contador++; 
+} 
+} 
+function decrementar() { 
+if(contador==0) 
+alert('Minimo permitido alcanzado: 0'); 
+else { 
+document.contar.contadorcito.value= contador--;} 
+} 
+</script> 
+<form name="contar"> 
+<input type="button" onClick="incrementar()" value="+1"> 
+<label> 
+<input name="contadorcito" type="text" > 
+</label> 
+<input type="button" onClick="decrementar()" value="-1"> 
+</form> 
+
+
+<input type="button" value="VS"> 
+
+
+<head> 
+<title>Contador</title> 
+</head> 
+<script language="JavaScript"> 
+var contador1=0; 
+function incrementar1() { 
+if(contador1==400) 
+alert('Maximo permitido alcanzado: 400'); 
+else { 
+document.contar1.contadorcito1.value= contador1++; 
+} 
+} 
+function decrementar1() { 
+if(contador1==0) 
+alert('Minimo permitido alcanzado: 0'); 
+else { 
+document.contar1.contadorcito1.value= contador1--;} 
+} 
+</script> 
+<form name="contar1"> 
+<input type="button" onClick="incrementar1()" value="+1"> 
+<label> 
+<input name="contadorcito1" type="text" > 
+</label> 
+<input type="button" onClick="decrementar1()" value="-1"> 
+</form> 
+
+
+
+
     <div role="main" class="ui-content">
         <div data-controltype="htmlblock">
             <title>
@@ -170,6 +239,42 @@
         class="ui-btn ui-btn-left ui-icon-back ui-btn-icon-left">
         </a>
     </div>
+
+
+
+
+
+
+<title>Contador</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  
+
+<form name="formulario">
+    <select id="dar_valor" name="dar_valor" color"black">
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15" selected="selected">15</option>
+        <option value="17">17</option>
+        <option value="20">20</option>
+        <option value="25">25</option>
+        <option value="30">30</option>
+        <option value="40">40</option>
+        <option value="45">45</option>
+    </select>
+
+
+
+<input type="button" onclick="myfunction(formulario.dar_valor.value)"value="Guardar Configuraciones">
+</form>
+
+
+
+
+    
     <div role="main" class="ui-content">
     </div>
 </div>
